@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MyHomeComponent } from './my-home/my-home.component';
 import { MyAboutComponent } from './my-about/my-about.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
     AppComponent,
     MyHomeComponent,
     MyAboutComponent,
+    ContactListComponent,
   ],
   imports: [
     BrowserModule,

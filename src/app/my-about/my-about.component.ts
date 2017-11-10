@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-my-about',
   templateUrl: './my-about.component.html',
@@ -8,9 +8,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MyAboutComponent implements OnInit {
 
-  constructor() { }
+   constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
+  goToHome() {
+   this.router.navigate(['/home']);  // <!-- Programmatically navigate to home
+ }
 
 }
